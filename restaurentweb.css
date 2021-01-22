@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../RestaurentWeb/img/pexels-mudassir-ali-3970396.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.wrapper{
+    width: 90%;
+    margin: auto;
+}
+.navigation{
+    width: auto;
+}
+#navlist{
+    margin-top: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+li{
+    background-color:#ffc600;
+    padding: 10px;
+    width: 230px;
+    max-width: 230px;  
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: xx-large;
+    display: block;
+}
+@media  screen  and (max-width:1050px){
+    a{
+        font-size: medium;
+    }
+    li{
+        width:150px;
+    }
+}
+@media  screen  and (max-width:915px){
+    a{
+        font-size: small;
+    }
+    li{
+        width: 100px;
+    }
+}
+.mainwrapper{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 200px ;
+    grid-template-areas: "header header firstcost"
+                        "header header secondcost";
+    grid-gap: 20px;
+}
+.header{
+    grid-area: header;
+    background-image: url(./img/sandwitch.jpg);
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    font-family: 'Righteous', cursive;
+
+    
+}
+#head{
+    background-color: #ffc600;
+    width: fit-content;
+    padding: 7px;
+    font-size: xx-large;
+
+}
+#deliver{
+    background-color: #ffc600;
+    width: fit-content;
+    padding: 10px;
+    font-weight: lighter;
+    font-size: large;
+    letter-spacing: 5px;
+}
+.firstcost{
+    grid-area:firstcost;
+    background-color: #ffc600;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.secondcost{
+    grid-area: secondcost;
+    background-color: #ffc600;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.cost{
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width:827px){
+    .mainwrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 150px;
+        grid-template-areas: "header header"
+                              "firstcost secondcost";
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 5%;
+    }
+    #head {
+        font-size: large;
+    }
+    #deliver{
+        font-size: small;
+    } 
+}
+img{
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+}
+.typeofservice{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-column-gap: 15px;
+}
+.item{
+    padding: 0px 10px;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+.des{
+    font-family: 'Andika New Basic', sans-serif;
+    font-weight: bolder;
+}
+@media screen and (max-width:991px){
+    .typeofservice{
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-row-gap: 20px;
+    }
+}
+
+#img2{
+    width: 450px;
+    height: 300px;
+    padding: 10px 20px;
+}
+.thirdsec{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: auto;
+    background-color: lightgoldenrodyellow;
+}
+.description{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+#multitacos{
+    font-family: 'Righteous', cursive;
+    font-weight:bolder;
+    padding: 10px 0px ;
+}
+#multitacosdes{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+#a{
+    padding: 5px;
+    background-color: #ffc600;
+    text-decoration: none;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media screen and (max-width:720px){
+    #img2{
+        width: 100%;
+        height: 300px;
+        padding: 10px 20px;
+    }
+
+    .thirdsec{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        background-color: lightgoldenrodyellow;
+    }
+    .abouttacos{
+        text-align: center;
+    }
+    #link{
+        text-align: center;
+    }
+}
+.head h3{
+    margin-top: 10px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+.gallery img{
+    width: 100%;
+    height: 220px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    
+}
+@media screen and (max-width:850px){
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        
+    }
+}
+@media screen and (max-width:720px){
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        
+    }
+}
+@media screen and (max-width:590px){
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        
+    }
+}
+
+
+
